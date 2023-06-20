@@ -22,7 +22,7 @@ menu <- bs4SidebarMenu(
 )
 
 body <- bs4DashBody(
-  useShinyalert(),
+  #useShinyalert(),
   useShinyjs(),
   add_busy_spinner(position = "top-left"),
   tabs

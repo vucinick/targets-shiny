@@ -68,7 +68,7 @@ card_models <- bs4Card(
   disabled(
     awesomeCheckboxGroup(
       inputId = "biomarkers",
-      label = "Biomarkers", 
+      label = "Biomarkers",
       choices = c("albumin", "log_bilirubin", "log_platelet"),
       selected = c("albumin", "log_bilirubin"),
       status = "primary",
@@ -138,7 +138,7 @@ card_run <- bs4Card(
 tab_control <- bs4TabItem(
   "control",
   fluidRow(
-    column(6, card_select, card_create),
-    column(6, card_run, card_models)
+    column(6, card_create, card_select),
+    column(6, card_models, card_run)
   )
 )
